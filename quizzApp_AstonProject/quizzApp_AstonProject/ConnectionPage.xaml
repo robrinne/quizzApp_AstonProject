@@ -4,34 +4,86 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="quizzApp_AstonProject.ConnectionPage">
     
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Inscription" Clicked="Handle_Clicked"/>
+    <ContentPage.ToolbarItems BackgroundColor="#FFB864">
+        <ToolbarItem 
+            Icon="logos_full_transparent_2.png" 
+            Order="Primary" 
+            Priority="0" />
+        <ToolbarItem 
+            Text="Nous contacter" 
+            Clicked="GetInfos" 
+            Order="Secondary" 
+            Priority="1" />
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
-     
-            <Label 
-                Text="Username" />
             
             <Entry 
                 x:Name="usernameEntry" 
-                Placeholder="username"/>
+                Placeholder="Pseudo ou email"
+                Margin="20,40,20,20"/>
             
-            <Label 
-                Text="Password"/>
-
             <Entry 
                 x:Name="passwordEntry" 
                 IsPassword="true" 
-                Placeholder="password"/>
+                Placeholder="Mot de passe"
+                Margin="20,20,20,20"/>
 
             <Button 
-                Text="Login" 
-                Clicked="OnLoginButtonClicked"/>
-            
+                Text="&#xa;SE CONNECTER&#xa;" 
+                Clicked="OnLoginButtonClicked"
+                BackgroundColor="#47525E"
+                TextColor="White"
+                Margin="20,20,20,2"/>
+
+            <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
+                
+                <Label 
+                    x:Name="messageLabel"
+                    Text="Vous n'avez pas de compte ?"/>
+                
+                <Label 
+                    x:Name="messageRegistration"
+                    TextColor="#6293CC"
+                    Text="S'inscrire">
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Tapped="GoToRegistrationPage"
+                            NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                    
+                </Label>
+            </StackLayout>
+
             <Label 
-                x:Name="messageLabel"/>
+                Text="------------- OU -------------" 
+                HorizontalOptions="Center"/>
+
+            <Button
+                Text="&#xa;SE CONNECTER AVEC FACEBOOK&#xa;"
+                Image="fb_30_30_2.png"
+                Clicked="OnLoginFacebookButtonClicked"
+                BackgroundColor="#3B579D"
+                TextColor="White"
+                Margin="20,20,20,2" />
+
+            <Button 
+                Text="&#xa;SE CONNECTER AVEC TWITTER&#xa;" 
+                Image="logo_twitter.png"
+                Clicked="OnLoginTwitterButtonClicked"
+                BackgroundColor="#00ACEE"
+                TextColor="White"
+                Margin="20,20,20,2"/>
+
+            <Button 
+                Text="&#xa;SE CONNECTER AVEC GOOGLE&#xa;" 
+                Image="logo_google.png"
+                Clicked="OnLoginGoogleButtonClicked"
+                BackgroundColor="#DB4A3C"
+                TextColor="White"
+                Margin="20,20,20,2"/>
             
         </StackLayout>
     </ContentPage.Content>

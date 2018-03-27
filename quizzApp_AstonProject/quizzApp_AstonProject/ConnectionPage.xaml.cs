@@ -12,14 +12,49 @@ namespace quizzApp_AstonProject
             InitializeComponent();
         }
 
-        public async void Handle_Clicked(object sender, System.EventArgs e)
+        public async void GoToRegistrationPage(object sender, System.EventArgs args)
         {
-            await Navigation.PushAsync(new NavigationPage(new RegistrationPage()));
+            await Navigation.PushAsync(new RegistrationPage());
         }
 
         public async void OnLoginButtonClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new NavigationPage(new HomePage()));
+            await Navigation.PushAsync(new HomePage());
+        }
+
+        public async void OnLoginFacebookButtonClicked(object sender, System.EventArgs e)
+        {
+            //await Navigation.PushAsync(new HomePage());
+            var answer = await DisplayAlert("Facebook", "Créer un compte à partir de Facebook", "Ok", "Annuler");
+            if(answer)
+            {
+                await DisplayAlert("Facebook", "Compte créé avec succès", "Fermer");
+            }
+        }
+
+        public async void OnLoginTwitterButtonClicked(object sender, System.EventArgs e)
+        {
+            //await Navigation.PushAsync(new HomePage());
+            var answer = await DisplayAlert("Twitter", "Créer un compte à partir de Twitter", "Ok", "Annuler");
+            if (answer)
+            {
+                await DisplayAlert("Twitter", "Compte créé avec succès", "Fermer");
+            }
+        }
+
+        public async void OnLoginGoogleButtonClicked(object sender, System.EventArgs e)
+        {
+            //await Navigation.PushAsync(new HomePage());
+            var answer = await DisplayAlert("Google", "Créer un compte à partir de Google", "Ok", "Annuler");
+            if (answer)
+            {
+                await DisplayAlert("Google", "Compte créé avec succès", "Fermer");
+            }
+        }
+
+        public async void GetInfos(object sender, System.EventArgs e)
+        {
+            await DisplayAlert("Comment nous contacter ?", "Adresse email : quizzApp.infos@dev.com", "Ok");
         }
     }
 }

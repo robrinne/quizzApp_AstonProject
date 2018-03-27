@@ -7,8 +7,10 @@ namespace quizzApp_AstonProject
         public App()
         {
             InitializeComponent();
+            NavigationPage c = new NavigationPage(new ConnectionPage());
+            c.BarBackgroundColor = Color.FromHex("#FFB864");
 
-            MainPage = new NavigationPage(new ConnectionPage());
+            MainPage = c;
         }
 
         protected override void OnStart()
