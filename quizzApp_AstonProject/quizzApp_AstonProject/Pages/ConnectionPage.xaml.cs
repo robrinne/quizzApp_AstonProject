@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using quizzApp_AstonProject.PageMenu;
 using Xamarin.Forms;
 
-namespace quizzApp_AstonProject
+namespace quizzApp_AstonProject.Pages
 {
     public partial class ConnectionPage : ContentPage
     {
@@ -19,7 +19,8 @@ namespace quizzApp_AstonProject
 
         public async void OnLoginButtonClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new HomePage());
+            await Navigation.PushAsync(new MainPage());
+            Navigation.RemovePage(this);
         }
 
         public async void OnLoginFacebookButtonClicked(object sender, System.EventArgs e)

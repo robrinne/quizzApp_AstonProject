@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace quizzApp_AstonProject
+namespace quizzApp_AstonProject.Pages
 {
-    public partial class AddQuizzPage : ContentPage
+    public partial class RegistrationPage : ContentPage
     {
-        public AddQuizzPage()
+        public RegistrationPage()
         {
             InitializeComponent();
         }

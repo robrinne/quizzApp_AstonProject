@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -28,68 +27,76 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="RegistrationPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConnectionPage.xaml">
+    <EmbeddedResource Include="PageMenu\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePage.xaml">
+    <EmbeddedResource Include="Pages\AddAnswerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfilePage.xaml">
+    <EmbeddedResource Include="Pages\AddQuestionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddQuizzPage.xaml">
+    <EmbeddedResource Include="Pages\AddQuizzPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddQuestionPage.xaml">
+    <EmbeddedResource Include="Pages\ConnectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddAnswerPage.xaml">
+    <EmbeddedResource Include="Pages\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuizzPage.xaml">
+    <EmbeddedResource Include="Pages\QuizzPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\RegistrationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\App.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationPage.xaml.cs">
-      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    <Compile Include="MenuItems\MasterPageItem.cs" />
+    <Compile Include="PageMenu\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ConnectionPage.xaml.cs">
-      <DependentUpon>ConnectionPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ProfilePage.xaml.cs">
-      <DependentUpon>ProfilePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AddQuizzPage.xaml.cs">
-      <DependentUpon>AddQuizzPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AddQuestionPage.xaml.cs">
-      <DependentUpon>AddQuestionPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AddAnswerPage.xaml.cs">
+    <Compile Include="Pages\AddAnswerPage.xaml.cs">
       <DependentUpon>AddAnswerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="QuizzPage.xaml.cs">
+    <Compile Include="Pages\AddQuestionPage.xaml.cs">
+      <DependentUpon>AddQuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddQuizzPage.xaml.cs">
+      <DependentUpon>AddQuizzPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConnectionPage.xaml.cs">
+      <DependentUpon>ConnectionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\QuizzPage.xaml.cs">
       <DependentUpon>QuizzPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +112,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PageMenu\" />
+    <Folder Include="MenuItems\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
