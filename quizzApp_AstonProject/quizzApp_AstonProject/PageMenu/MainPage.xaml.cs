@@ -31,6 +31,7 @@ namespace quizzApp_AstonProject.PageMenu
             menuList.Add(page5);
 
             navigationDrawerList.ItemsSource = menuList;
+            navigationDrawerList.SeparatorColor = Color.FromHex("#C0CCDA");
 
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(HomePage))) { BarBackgroundColor = Color.FromHex("#FFB864"), BarTextColor = Color.White };
        
@@ -38,12 +39,26 @@ namespace quizzApp_AstonProject.PageMenu
 
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
             var item = (MasterPageItem)e.SelectedItem;
             Type page = item.TargetType;
 
             Detail = new NavigationPage((Page)Activator.CreateInstance(page)) { BarBackgroundColor = Color.FromHex("#FFB864"), BarTextColor = Color.White };
             IsPresented = false;
         }
+
+        private async void OnDecoSelect(object sender, System.EventArgs args)
+        {
+            var answer = await DisplayAlert("Déconnexion", "Voulez-vous vraiment vous déconnecter ?", "Oui", "Non");
+            if (answer)
+            {
+                await Navigation.PushAsync(new ConnectionPage() { });
+            }
+        }
+
+        private async void OnContactUsSelect(object sender, System.EventArgs args)
+        {
+            await DisplayAlert("Comment nous contacter ?", "Adresse email : quizzApp.infos@dev.com", "Ok");
+        }
+
     }
 }

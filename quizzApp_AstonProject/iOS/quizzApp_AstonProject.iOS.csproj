@@ -124,6 +124,21 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fb.jpg" />
+    <BundleResource Include="Resources\fb_30_30.jpg" />
+    <BundleResource Include="Resources\fb_30_30_2.png" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\logo_google.png" />
+    <BundleResource Include="Resources\logo_twitter.png" />
+    <BundleResource Include="Resources\logos_full_transparent.png" />
+    <BundleResource Include="Resources\logos_full_transparent_2.png" />
+    <BundleResource Include="Resources\logos_single_transparent.png" />
+    <BundleResource Include="Resources\logos_single_transparent_250_250.png" />
+    <BundleResource Include="Resources\twitter_30_30.png" />
+    <BundleResource Include="Resources\logos_single_transparent_75_75.png" />
+    <BundleResource Include="Resources\logos_single_transparent_125_125.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
 </Project>

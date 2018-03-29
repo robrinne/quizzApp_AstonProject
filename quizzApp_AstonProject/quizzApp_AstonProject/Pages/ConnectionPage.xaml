@@ -2,13 +2,14 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="quizzApp_AstonProject.Pages.ConnectionPage">
+    x:Class="quizzApp_AstonProject.Pages.ConnectionPage"
+    NavigationPage.HasBackButton="False">
     
     <ContentPage.ToolbarItems BackgroundColor="#FFB864">
-        <ToolbarItem 
+        <!--<ToolbarItem 
             Icon="logos_full_transparent_2.png" 
             Order="Primary" 
-            Priority="0" />
+            Priority="0" />-->
         <ToolbarItem 
             Text="Nous contacter" 
             Clicked="GetInfos" 
