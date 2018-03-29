@@ -18,7 +18,7 @@
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon_quizz.png"/>
+                        Source="icon_coupe_72_72.png"/>
                     <Label 
                         Text="Réaliser un quizz"
                         VerticalOptions="Center"
@@ -28,7 +28,7 @@
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon_creation.png"/>
+                        Source="icon_coupe_72_72.png"/>
                     <Label 
                         Text="Créer un quizz"
                         VerticalOptions="Center"
@@ -38,7 +38,7 @@
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon_coupe.png"/>
+                        Source="icon_coupe_72_72.png"/>
                     <Label 
                         Text="Classement"
                         VerticalOptions="Center"
@@ -48,7 +48,7 @@
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon_xp.png"/>
+                        Source="icon_coupe_72_72.png"/>
                     <Label 
                         Text="Expérience"
                         VerticalOptions="Center"
@@ -58,7 +58,7 @@
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon_security.png"/>
+                        Source="icon_coupe_72_72.png"/>
                     <Label 
                         Text="Gérer l'accès à vos&#x0A;quizz"
                         VerticalOptions="Center"
