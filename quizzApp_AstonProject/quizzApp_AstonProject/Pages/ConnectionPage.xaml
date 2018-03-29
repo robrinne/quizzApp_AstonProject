@@ -31,11 +31,11 @@
                 Margin="20,20,20,20"/>
 
             <Button 
-                Text="&#xa;SE CONNECTER&#xa;" 
+                Text="SE CONNECTER" 
                 Clicked="OnLoginButtonClicked"
                 BackgroundColor="#47525E"
                 TextColor="White"
-                Margin="20,20,20,2"/>
+                Margin="20,20,20,10"/>
 
             <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
                 
@@ -62,7 +62,7 @@
                 HorizontalOptions="Center"/>
 
             <Button
-                Text="&#xa;SE CONNECTER AVEC FACEBOOK&#xa;"
+                Text="SE CONNECTER AVEC FACEBOOK"
                 Image="fb_30_30_2.png"
                 Clicked="OnLoginFacebookButtonClicked"
                 BackgroundColor="#3B579D"
@@ -70,7 +70,7 @@
                 Margin="20,20,20,2" />
 
             <Button 
-                Text="&#xa;SE CONNECTER AVEC TWITTER&#xa;" 
+                Text="SE CONNECTER AVEC TWITTER" 
                 Image="logo_twitter.png"
                 Clicked="OnLoginTwitterButtonClicked"
                 BackgroundColor="#00ACEE"
@@ -78,7 +78,7 @@
                 Margin="20,20,20,2"/>
 
             <Button 
-                Text="&#xa;SE CONNECTER AVEC GOOGLE&#xa;" 
+                Text="SE CONNECTER AVEC GOOGLE" 
                 Image="logo_google.png"
                 Clicked="OnLoginGoogleButtonClicked"
                 BackgroundColor="#DB4A3C"
