@@ -12,47 +12,57 @@
             </SearchBar>
             <StackLayout
                 Orientation="Vertical"
-                Padding="50, 50, 0, 0"
-                Spacing="50"
+                Padding="40, 30, 0, 0"
+                Spacing="40"
                 IsVisible="true">
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon.png"/>
+                        Source="icon_quizz.png"/>
                     <Label 
                         Text="Réaliser un quizz"
+                        VerticalOptions="Center"
+                        Margin="30, 0, 0, 0"
                         FontSize="25"/>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon.png"/>
+                        Source="icon_creation.png"/>
                     <Label 
                         Text="Créer un quizz"
+                        VerticalOptions="Center"
+                        Margin="30, 0, 0, 0"
                         FontSize="25"/>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon.png"/>
+                        Source="icon_coupe.png"/>
                     <Label 
                         Text="Classement"
+                        VerticalOptions="Center"
+                        Margin="30, 0, 0, 0"
                         FontSize="25"/>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon.png"/>
+                        Source="icon_xp.png"/>
                     <Label 
                         Text="Expérience"
+                        VerticalOptions="Center"
+                        Margin="30, 0, 0, 0"
                         FontSize="25"/>
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal">
                     <Image 
-                        Source="icon.png"/>
+                        Source="icon_security.png"/>
                     <Label 
-                        Text="Gérer l'accès à vos quizz"
+                        Text="Gérer l'accès à vos&#x0A;quizz"
+                        VerticalOptions="Center"
+                        Margin="30, 0, 0, 0"
                         FontSize="25"/>
                 </StackLayout>
             </StackLayout>

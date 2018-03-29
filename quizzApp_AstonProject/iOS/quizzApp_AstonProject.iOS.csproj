@@ -138,6 +138,11 @@
     <BundleResource Include="Resources\twitter_30_30.png" />
     <BundleResource Include="Resources\logos_single_transparent_75_75.png" />
     <BundleResource Include="Resources\logos_single_transparent_125_125.png" />
+    <BundleResource Include="Resources\icon_coupe.png" />
+    <BundleResource Include="Resources\icon_creation.png" />
+    <BundleResource Include="Resources\icon_quizz.png" />
+    <BundleResource Include="Resources\icon_security.png" />
+    <BundleResource Include="Resources\icon_xp.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
