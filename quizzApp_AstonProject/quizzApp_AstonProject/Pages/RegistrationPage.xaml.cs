@@ -14,11 +14,11 @@ namespace quizzApp_AstonProject.Pages
 
         public async void GoToConnectionPageAfterInscritpion(object sender, System.EventArgs args)
         {
-            await Navigation.PushAsync(new ConnectionPage());
             var answer = await DisplayAlert("Inscription", "Votre compte à bien été créé", "Ok", "Annuler");
             if (answer)
             {
                 await DisplayAlert("QuizzApp", "Vous devez valider votre adresse mail pour vous connectez ", "Fermer");
+                await Navigation.PushAsync(new ConnectionPage());
             }
         }
 
