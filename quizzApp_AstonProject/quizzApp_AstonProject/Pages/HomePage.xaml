@@ -4,5 +4,62 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="quizzApp_AstonProject.Pages.HomePage">
     <ContentPage.Content>
+        <StackLayout>
+            <SearchBar
+                Placeholder="Rechercher un quizz ou un profil"
+                VerticalOptions="Start"
+                HorizontalOptions="Start">
+            </SearchBar>
+            <StackLayout
+                Orientation="Vertical"
+                Padding="50, 50, 0, 0"
+                Spacing="50"
+                IsVisible="true">
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="icon.png"/>
+                    <Label 
+                        Text="Réaliser un quizz"
+                        FontSize="25"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="icon.png"/>
+                    <Label 
+                        Text="Créer un quizz"
+                        FontSize="25"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="icon.png"/>
+                    <Label 
+                        Text="Classement"
+                        FontSize="25"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="icon.png"/>
+                    <Label 
+                        Text="Expérience"
+                        FontSize="25"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Image 
+                        Source="icon.png"/>
+                    <Label 
+                        Text="Gérer l'accès à vos quizz"
+                        FontSize="25"/>
+                </StackLayout>
+            </StackLayout>
+            <ListView
+                x:Name="Results"
+                IsVisible="false">
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
