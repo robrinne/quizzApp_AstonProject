@@ -3,6 +3,63 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="quizzApp_AstonProject.Pages.RegistrationPage">
+    <ContentPage.ToolbarItems BackgroundColor="#FFB864">
+        <ToolbarItem 
+            Icon="logos_full_transparent_2.png" 
+            Order="Primary" 
+            Priority="0" />
+        <ToolbarItem 
+            Text="Nous contacter" 
+            Clicked="GetInfos" 
+            Order="Secondary" 
+            Priority="1" />
+    </ContentPage.ToolbarItems>
+    
+    
     <ContentPage.Content>
+
+        <StackLayout VerticalOptions="StartAndExpand">
+
+            <Entry 
+                x:Name="emailRegistration" 
+                Placeholder="Email"
+                Margin="20,20,20,20"/>
+            
+            <Entry 
+                x:Name="usernameRegistration" 
+                Placeholder="Pseudo"
+                Margin="20,20,20,20"/>
+
+            <Entry 
+                x:Name="passwordRegistration" 
+                IsPassword="true" 
+                Placeholder="Mot de passe"
+                Margin="20,20,20,20"/>
+
+            <Button 
+                Text="S'INSCRIRE" 
+                Clicked="GoToConnectionPageAfterInscritpion"
+                BackgroundColor="#47525E"
+                TextColor="White"
+                Margin="20,20,20,20"/>
+
+            <Label 
+                Text="------------- OU -------------" 
+                HorizontalOptions="Center"/>
+
+            <Button 
+                Text="SE CONNECTER" 
+                Clicked="GoToConnectionPage"
+                BackgroundColor="#47525E"
+                TextColor="White"
+                Margin="20,40,20,2"/>
+
+        </StackLayout>
+
+        
+
+
+       
+        
     </ContentPage.Content>
 </ContentPage>
