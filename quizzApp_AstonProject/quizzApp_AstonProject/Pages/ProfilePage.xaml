@@ -4,5 +4,131 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="quizzApp_AstonProject.Pages.ProfilePage">
     <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout 
+                Orientation="Horizontal"
+                Margin="90,30,0,30">
+                
+                <Image 
+                    Source="profile_72_72.png" />
+
+                <Label 
+                    Text="Pseudo"
+                    VerticalOptions="Center"
+                    Margin="30, 0, 0, 0"
+                    FontSize="25"
+                    TextColor="Black"/>
+                
+            </StackLayout>
+            
+            <Label
+                Text="Classements"
+                VerticalOptions="Center"
+                Margin="15, 0, 0, 0"
+                FontSize="25"
+                TextColor="Black"/>
+
+
+            <StackLayout 
+                Orientation="Vertical"
+                BackgroundColor="#C0CCDA"
+                Margin="15,5,15,5">
+
+                <StackLayout 
+                    Orientation="Horizontal"
+                    Margin="0,10,0,0">
+                    
+                    <Button 
+                        Text="Créateur"
+                        TextColor="White"
+                        FontSize="15"
+                        BackgroundColor="#FFB864"
+                        BorderRadius="10"
+                        Margin="45,0,0,0" 
+                        WidthRequest="110"
+                        HeightRequest="35"/>
+                    
+                    <Button 
+                        Text="Joueur"
+                        TextColor="White"
+                        FontSize="15"
+                        BackgroundColor="#FFB864"
+                        BorderRadius="10"
+                        Margin="35,0,0,0"
+                        WidthRequest="110"
+                        HeightRequest="35"/>
+                    
+                </StackLayout>
+
+                <StackLayout 
+                    Orientation="Horizontal"
+                    Margin="0,2,0,0">
+
+                    <Button 
+                        Text="128 pts"
+                        TextColor="White"
+                        FontSize="15"
+                        BackgroundColor="#5A6978"
+                        BorderRadius="10"
+                        Margin="45,0,0,0" 
+                        WidthRequest="110"
+                        HeightRequest="35"/>
+                    
+                    <Button 
+                        Text="1,6k pts"
+                        TextColor="White"
+                        FontSize="15"
+                        BackgroundColor="#5A6978"
+                        BorderRadius="10"
+                        Margin="35,0,0,0"
+                        WidthRequest="110"
+                        HeightRequest="35"/>
+                    
+                </StackLayout>
+
+                <StackLayout 
+                    Orientation="Horizontal"
+                    Margin="0,2,0,8">
+
+                    <Button 
+                        Image="icon_coupe_30_30_white.png"
+                        TextColor="White"
+                        FontSize="15"
+                        BackgroundColor="#969FAA"
+                        BorderRadius="10"
+                        Margin="45,0,0,0" 
+                        WidthRequest="110"
+                        HeightRequest="35"/>
+                    
+                    <Button 
+                        Image="icon_coupe_30_30_white.png"
+                        TextColor="White"
+                        FontSize="15"
+                        BackgroundColor="#969FAA"
+                        BorderRadius="10"
+                        Margin="35,0,0,0"
+                        WidthRequest="110"
+                        HeightRequest="35"/>
+                    
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout 
+                Orientation="Horizontal"
+                Margin="15, 0, 0, 0">
+                <Label
+                    Text="Quizz"
+                    VerticalOptions="CenterAndExpand"
+                    FontSize="25"
+                    TextColor="Black"/>
+
+                <Label
+                    Text="Voir plus de quizz"
+                    VerticalOptions="CenterAndExpand"
+                    FontSize="10"
+                    Margin="190, 0, 0, 0"
+                    TextColor="Black"/>
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
